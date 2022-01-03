@@ -8,13 +8,14 @@
 import UIKit
 
 enum ___VARIABLE_sceneName___ {
-    // MARK: - Use cases
-
     enum Something {
-        struct Request {}
+        struct Request {
+        }
 
-        struct Response {}
+        struct Response {
+        }
 
-        struct ViewModel {}
+        struct ViewModel {
+        }
     }
 }

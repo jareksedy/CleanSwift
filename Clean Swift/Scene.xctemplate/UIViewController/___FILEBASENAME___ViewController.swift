@@ -19,26 +19,31 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
         setupScene()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
         setupScene()
     }
 
-    // MARK: - Setup
+    // MARK: - Setup Scene
 
     private func setupScene() {
-        let viewController = self
         let interactor = ___VARIABLE_sceneName___Interactor()
         let presenter = ___VARIABLE_sceneName___Presenter()
         let router = ___VARIABLE_sceneName___Router()
-        viewController.interactor = interactor
-        viewController.router = router
+        
+        self.interactor = interactor
+        self.router = router
+        
         interactor.presenter = presenter
-        presenter.viewController = viewController
-        router.viewController = viewController
+        
+        presenter.viewController = self
+        router.viewController = self
+        
         router.dataStore = interactor
     }
 
@@ -57,6 +62,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         doSomething()
     }
 

@@ -24,23 +24,23 @@ class ___VARIABLE_sceneName___Router: NSObject, ___VARIABLE_sceneName___RoutingL
     // MARK: - Routing
 
     func routeToSomewhere(segue: UIStoryboardSegue?) {
-        if let segue = segue {
-            let destinationViewController = segue.destination as! SomewhereViewController
-            var destinationDataStore = destinationViewController.router!.dataStore!
-            passDataToSomewhere(source: dataStore!, destination: &destinationDataStore)
-        } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let destinationViewController = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-            var destinationDataStore = destinationViewController.router!.dataStore!
-            passDataToSomewhere(source: dataStore!, destination: &destinationDataStore)
-            navigateToSomewhere(source: viewController!, destination: destinationViewController)
-        }
+//        if let segue = segue {
+//            let destinationViewController = segue.destination as! SomewhereViewController
+//            var destinationDataStore = destinationViewController.router!.dataStore!
+//            passDataToSomewhere(source: dataStore!, destination: &destinationDataStore)
+//        } else {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let destinationViewController = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
+//            var destinationDataStore = destinationViewController.router!.dataStore!
+//            passDataToSomewhere(source: dataStore!, destination: &destinationDataStore)
+//            navigateToSomewhere(source: viewController!, destination: destinationViewController)
+//        }
     }
 
     // MARK: - Navigation
 
     func navigateToSomewhere(source: ___VARIABLE_sceneName___ViewController, destination: SomewhereViewController) {
-        source.show(destination, sender: nil)
+//        source.show(destination, sender: nil)
     }
 
     // MARK: - Passing data

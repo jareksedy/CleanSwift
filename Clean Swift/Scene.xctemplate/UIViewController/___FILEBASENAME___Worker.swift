@@ -12,5 +12,6 @@ protocol ___VARIABLE_sceneName___WorkerLogic {
 }
 
 class ___VARIABLE_sceneName___Worker: ___VARIABLE_sceneName___WorkerLogic {
-    func doSomeWork() {}
+    func doSomeWork() {
+    }
 }
