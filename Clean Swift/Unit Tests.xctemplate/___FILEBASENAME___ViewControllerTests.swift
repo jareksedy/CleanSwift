@@ -3,7 +3,6 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 @testable import ___PROJECTNAMEASIDENTIFIER___
@@ -11,7 +10,7 @@ import XCTest
 
 class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
 
-    // MARK: Tests
+    // MARK: - Tests
 
     func test_shouldDoSomething_whenViewIsLoaded() {
         // Given
@@ -38,7 +37,7 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
         // XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
     }
 
-    // MARK: Helpers
+    // MARK: - Helpers
 
     func makeSUT(
         _ interactor: ___VARIABLE_sceneName___BusinessLogic = ___VARIABLE_sceneName___InteractorSpy(),
@@ -51,7 +50,7 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
     }
 }
 
-// MARK: Test doubles
+// MARK: - Test doubles
 
 class ___VARIABLE_sceneName___InteractorSpy: ___VARIABLE_sceneName___BusinessLogic {
     var doSomethingCalled = false

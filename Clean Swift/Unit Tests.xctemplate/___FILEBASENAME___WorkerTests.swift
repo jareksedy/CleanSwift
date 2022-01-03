@@ -3,18 +3,17 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 @testable import ___PROJECTNAMEASIDENTIFIER___
 import XCTest
 
 class ___VARIABLE_sceneName___WorkerTests: XCTestCase {
-    // MARK: Subject under test
+    // MARK: - Subject under test
 
     var sut: ___VARIABLE_sceneName___Worker!
 
-    // MARK: Test lifecycle
+    // MARK: - Test lifecycle
 
     override func setUp() {
         super.setUp()
@@ -25,13 +24,13 @@ class ___VARIABLE_sceneName___WorkerTests: XCTestCase {
         super.tearDown()
     }
 
-    // MARK: Test setup
+    // MARK: - Test setup
 
     func setup___VARIABLE_sceneName___Worker() {
         sut = ___VARIABLE_sceneName___Worker()
     }
 
-    // MARK: Tests
+    // MARK: - Tests
 
     func test_Something() {
         // Given
@@ -42,6 +41,6 @@ class ___VARIABLE_sceneName___WorkerTests: XCTestCase {
     }
 }
 
-// MARK: Test doubles
+// MARK: - Test doubles
 
-// MARK: Helpers
+// MARK: - Helpers

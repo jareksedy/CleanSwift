@@ -3,7 +3,6 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 import UIKit
@@ -21,7 +20,7 @@ class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___BusinessLogic,
     var worker: ___VARIABLE_sceneName___Worker?
     // var name: String = ""
 
-    // MARK: Do something
+    // MARK: - Do something
 
     func doSomething(request _: ___VARIABLE_sceneName___.Something.Request) {
         worker = ___VARIABLE_sceneName___Worker()

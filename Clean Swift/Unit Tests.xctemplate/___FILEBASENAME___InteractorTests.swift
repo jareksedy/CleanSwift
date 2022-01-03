@@ -3,7 +3,6 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 @testable import ___PROJECTNAMEASIDENTIFIER___
@@ -11,7 +10,7 @@ import XCTest
 
 class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
 
-    // MARK: Tests
+    // MARK: - Tests
 
     func test_someWorkRun_shouldDoSomething() {
         // Given
@@ -32,7 +31,7 @@ class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
         )
     }
 
-    // MARK: Helpers
+    // MARK: - Helpers
 
     func makeSUT(
         _ presenter: ___VARIABLE_sceneName___PresentationLogic = ___VARIABLE_sceneName___PresenterSpy(),
@@ -45,7 +44,7 @@ class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
     }
 }
 
-// MARK: Test doubles
+// MARK: - Test doubles
 
 class ___VARIABLE_sceneName___PresenterSpy: ___VARIABLE_sceneName___PresentationLogic {
     var presentSomethingCalled = false

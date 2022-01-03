@@ -3,7 +3,6 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 @testable import ___PROJECTNAMEASIDENTIFIER___
@@ -11,7 +10,7 @@ import XCTest
 
 class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
 
-    // MARK: Tests
+    // MARK: - Tests
 
     func test_PresentSomething() {
         // Given
@@ -30,7 +29,7 @@ class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
         )
     }
 
-    // MARK: Helpers
+    // MARK: - Helpers
 
     func makeSUT(
         _ viewController: ___VARIABLE_sceneName___DisplayLogic = ___VARIABLE_sceneName___ViewControllerSpy()
@@ -41,7 +40,7 @@ class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
     }
 }
 
-// MARK: Test doubles
+// MARK: - Test doubles
 
 class ___VARIABLE_sceneName___ViewControllerSpy: ___VARIABLE_sceneName___DisplayLogic {
     var displaySomethingCalled = false

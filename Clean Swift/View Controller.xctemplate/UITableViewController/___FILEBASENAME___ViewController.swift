@@ -3,7 +3,6 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 import UIKit
@@ -16,21 +15,21 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
     var interactor: ___VARIABLE_sceneName___BusinessLogic?
     var router: ___VARIABLE_sceneName___RoutingLogic?
 
-    // MARK: Object lifecycle
+    // MARK: - Object lifecycle
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        inititalSetup()
+        setupScene()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        inititalSetup()
+        setupScene()
     }
 
-    // MARK: Setup
+    // MARK: - Setup
 
-    private func inititalSetup() {
+    private func setupScene() {
         let viewController = self
         let interactor = ___VARIABLE_sceneName___Interactor()
         let presenter = ___VARIABLE_sceneName___Presenter()
@@ -43,7 +42,7 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
         router.dataStore = interactor
     }
 
-    // MARK: Routing
+    // MARK: - Routing
 
     override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
         if let scene = segue.identifier {
@@ -54,20 +53,20 @@ class ___VARIABLE_sceneName___ViewController: UITableViewController, ___VARIABLE
         }
     }
 
-    // MARK: View lifecycle
+    // MARK: - View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         doSomething()
     }
 
-    // MARK: Display Logic
+    // MARK: - Display Logic
 
     func displaySomething(viewModel _: ___VARIABLE_sceneName___.Something.ViewModel) {
         // nameTextField.text = viewModel.name
     }
 
-    // MARK: Private
+    // MARK: - Private
 
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Something.Request()

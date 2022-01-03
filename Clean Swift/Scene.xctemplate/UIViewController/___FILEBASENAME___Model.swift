@@ -3,13 +3,12 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ 
 //
 
 import UIKit
 
 enum ___VARIABLE_sceneName___ {
-    // MARK: Use cases
+    // MARK: - Use cases
 
     enum Something {
         struct Request {}
