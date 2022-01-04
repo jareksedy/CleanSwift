@@ -7,7 +7,7 @@
 
 import UIKit
 
-typealias ___VARIABLE_sceneName___RoutingLogic = ___VARIABLE_sceneName___NavigationLogic & ___VARIABLE_sceneName___DataPassing & NSObjectProtocol
+typealias ___VARIABLE_sceneName___RoutingLogic = ___VARIABLE_sceneName___NavigationLogic & ___VARIABLE_sceneName___DataPassing
 
 @objc protocol ___VARIABLE_sceneName___NavigationLogic {
     // func routeToSomewhere(segue: UIStoryboardSegue?)
@@ -39,13 +39,13 @@ class ___VARIABLE_sceneName___Router: NSObject, ___VARIABLE_sceneName___RoutingL
 
     // MARK: - Navigation
 
-    func navigateToSomewhere(source: ___VARIABLE_sceneName___ViewController, destination: SomewhereViewController) {
+//    func navigateToSomewhere(source: ___VARIABLE_sceneName___ViewController, destination: SomewhereViewController) {
 //        source.show(destination, sender: nil)
-    }
+//    }
 
     // MARK: - Passing data
 
-    func passDataToSomewhere(source: ___VARIABLE_sceneName___DataStore, destination: inout SomewhereDataStore) {
+//    func passDataToSomewhere(source: ___VARIABLE_sceneName___DataStore, destination: inout SomewhereDataStore) {
 //        destination.name = source.name
-    }
+//    }
 }

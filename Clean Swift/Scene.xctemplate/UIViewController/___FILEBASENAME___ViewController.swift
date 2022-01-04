@@ -13,23 +13,23 @@ protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject {
 
 class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___DisplayLogic {
     var interactor: ___VARIABLE_sceneName___BusinessLogic?
-    var router: ___VARIABLE_sceneName___RoutingLogic?
+    var router: (___VARIABLE_sceneName___RoutingLogic & NSObjectProtocol)?
+    
+    // MARK: - Outlets
 
     // MARK: - Object lifecycle
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
         setupScene()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
         setupScene()
     }
 
-    // MARK: - Setup Scene
+    // MARK: - Setup scene
 
     private func setupScene() {
         let interactor = ___VARIABLE_sceneName___Interactor()
@@ -58,21 +58,24 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
         }
     }
 
+    // MARK: - Actions
+    
+    // MARK: - Selectors
+    
     // MARK: - View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         doSomething()
     }
 
-    // MARK: - Display Logic
+    // MARK: - Display methods
 
     func displaySomething(viewModel _: ___VARIABLE_sceneName___.Something.ViewModel) {
         // nameTextField.text = viewModel.name
     }
 
-    // MARK: - Private
+    // MARK: - Requests
 
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Something.Request()
